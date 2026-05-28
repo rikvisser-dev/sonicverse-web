@@ -1,5 +1,4 @@
 import createMDX from '@next/mdx'
-import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
 import type { NextConfig } from 'next'
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -71,4 +70,3 @@ const nextConfig: NextConfig = {
 }
 
 export default withMDX(nextConfig)
-initOpenNextCloudflareForDev()

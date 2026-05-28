@@ -1,10 +1,9 @@
-# Cloudflare Workers Deployment Guide
+# Vercel Deployment Guide
 
 ## Prerequisites
 
-1. Install [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/)
-2. Install [Node.js](https://nodejs.org/) (v18+ recommended)
-3. Install dependencies: `npm install`
+1. Install [Node.js](https://nodejs.org/) (v18+ recommended)
+2. Install dependencies: `npm install`
 
 ## Development
 
@@ -16,89 +15,43 @@ npm run dev
 
 This starts the Next.js development server on `http://localhost:3000`.
 
-### Preview with Cloudflare Workers
+## Vercel Deployments
 
-```bash
-npm run preview
-```
+This repository uses Vercel for deployment and preview system.
 
-This builds the worker and starts a local Cloudflare Workers environment using OpenNext preview.
-
-## Cloudflare Workers Builds
-
-This repository uses Cloudflare Workers Builds as the single deployment and preview system.
-
-- Pull requests are previewed through the existing Cloudflare Git integration for `sonicverse-website`.
-- `wrangler.jsonc` sets `preview_urls` to `true` so uploaded Worker versions can expose preview URLs.
-- The non-production branch trigger should use `npm run deploy:preview`, which runs `wrangler versions upload`.
-- There is no separate GitHub Actions preview workflow to maintain.
-
-When a pull request updates successfully, GitHub should show the native Cloudflare Workers status for the connected Worker. A direct preview URL is only expected when the preview trigger uploads a Worker version instead of performing a full `wrangler deploy`.
+- Pull requests are automatically previewed by Vercel.
+- The `main` branch is automatically deployed to production.
 
 ## Production Deployment
 
 ### Build for Production
 
 ```bash
-npm run build:worker
+npm run build
 ```
 
-### Deploy to Cloudflare
+### Start Production Server Locally
 
 ```bash
-npm run deploy
-```
-
-This is the manual Wrangler path. The default production path for merged changes remains the connected Cloudflare Workers Builds integration.
-
-### Upload a Preview Version
-
-```bash
-npm run build:worker
-npm run deploy:preview
-```
-
-Use this for manual preview-version uploads. It creates a version preview instead of promoting production traffic.
-
-### Preview Production Build Locally
-
-```bash
-npm run preview
+npm run start
 ```
 
 ## Configuration
 
 ### Environment Variables
 
-Create `.dev.vars` for local development and `.prod.vars` for production. Example:
+Configure environment variables in the Vercel Dashboard under Project Settings > Environment Variables.
 
-```
-# Email configuration
-EMAIL_SENDER = "noreply@mail.sonicverse.eu"
-EMAIL_RECIPIENT = "hello@sonicverse.eu"
+Required variables:
 
-# Environment
-NODE_ENV = "development"
-```
+- `EMAIL_SENDER`: The email address that sends inquiries (e.g., `noreply@mail.sonicverse.eu`).
+- `EMAIL_RECIPIENT`: The email address that receives inquiries (e.g., `hello@sonicverse.eu`).
+- `RESEND_API_KEY`: API key for the Resend email service.
 
-### Secrets
+Optional variables:
 
-For sensitive data, use Cloudflare Workers secrets:
-
-```bash
-wrangler secret put EMAIL_SENDER
-wrangler secret put EMAIL_RECIPIENT
-```
-
-## Optimizations Applied
-
-1. **Edge Runtime**: Configured for Cloudflare Workers edge execution
-2. **Caching**: Configure caching at the Cloudflare dashboard level (Cache Rules)
-3. **Minification**: Enabled code minification via Next.js
-4. **Tree Shaking**: Automatic via Next.js build process
-5. **Image Optimization**: Configured for Cloudflare Images
-6. **Observability**: Enabled logging and tracing in wrangler.jsonc
-7. **Type Safety**: Added Cloudflare environment types
+- `NEXT_PUBLIC_SITE_URL`: The public URL of the website.
+- `NEXT_PUBLIC_IMAGE_WORKER_URL`: Custom URL for image processing if applicable.
 
 ## Troubleshooting
 
@@ -107,26 +60,13 @@ wrangler secret put EMAIL_RECIPIENT
 ```bash
 npm run clean
 npm install
-npm run build:worker
-```
-
-### Type Generation
-
-```bash
-npm run cf-typegen
-```
-
-### Check Wrangler Version
-
-```bash
-wrangler --version
+npm run build
 ```
 
 ## Useful Commands
 
-- `npm run build:worker` - Build the OpenNext Worker bundle
-- `npm run preview` - Preview the built Worker locally
-- `npm run deploy` - Manually deploy the Worker with Wrangler
-- `npm run deploy:preview` - Upload a preview Worker version with Wrangler
+- `npm run dev` - Starts the Next.js development server
+- `npm run build` - Builds the Next.js app for production
+- `npm run start` - Starts the production server
 - `npm run lint` - Run ESLint
 - `npm run clean` - Clean build artifacts
