@@ -2,15 +2,15 @@
 
 ## Prerequisites
 
-1. Install [Node.js](https://nodejs.org/) (v18+ recommended)
-2. Install dependencies: `npm install`
+1. Install [Bun](https://bun.sh/)
+2. Install dependencies: `bun install`
 
 ## Development
 
 ### Local Development
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 This starts the Next.js development server on `http://localhost:3000`.
@@ -27,13 +27,13 @@ This repository uses Vercel for deployment and preview system.
 ### Build for Production
 
 ```bash
-npm run build
+bun run build
 ```
 
 ### Start Production Server Locally
 
 ```bash
-npm run start
+bun run start
 ```
 
 ## Configuration
@@ -58,15 +58,15 @@ Optional variables:
 ### Clean Build
 
 ```bash
-npm run clean
-npm install
-npm run build
+bun run clean
+bun install
+bun run build
 ```
 
 ## Useful Commands
 
-- `npm run dev` - Starts the Next.js development server
-- `npm run build` - Builds the Next.js app for production
-- `npm run start` - Starts the production server
-- `npm run lint` - Run ESLint
-- `npm run clean` - Clean build artifacts
+- `bun run dev` - Starts the Next.js development server
+- `bun run build` - Builds the Next.js app for production
+- `bun run start` - Starts the production server
+- `bun run lint` - Run ESLint
+- `bun run clean` - Clean build artifacts

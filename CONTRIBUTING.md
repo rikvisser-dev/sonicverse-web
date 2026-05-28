@@ -27,7 +27,7 @@ If you are unsure whether an idea is a good fit, open an issue first so we can d
 2. Install dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 3. Copy the local Worker variables example:
@@ -40,13 +40,13 @@ cp .dev.vars.example .dev.vars
 5. Start the local development server:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 6. If your change affects runtime behavior on Cloudflare Workers, validate it with:
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 Additional deployment and platform notes live in [DEPLOYMENT.md](DEPLOYMENT.md).
@@ -72,15 +72,15 @@ Additional deployment and platform notes live in [DEPLOYMENT.md](DEPLOYMENT.md).
 This repository does not currently maintain a dedicated automated test suite, so contributors should validate changes with the existing quality checks:
 
 ```bash
-npm run lint
-npm run typecheck
-npm run build
+bun run lint
+bun run typecheck
+bun run build
 ```
 
 For changes that may behave differently in the Cloudflare runtime, also run:
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 The repository also uses a Husky pre-commit hook that runs `lint-staged`, which formats staged files before commit.
@@ -93,8 +93,8 @@ The repository also uses a Husky pre-commit hook that runs `lint-staged`, which 
 - Use the existing formatting and linting setup:
 
 ```bash
-npm run format
-npm run lint
+bun run format
+bun run lint
 ```
 
 - Preserve established naming, import aliasing, and file organization conventions unless the change explicitly updates project structure.
