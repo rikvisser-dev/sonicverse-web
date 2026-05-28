@@ -9,20 +9,20 @@
 Install dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 Run the Next.js development server:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Build and start the production server locally:
 
 ```bash
-npm run build
-npm run start
+bun run build
+bun run start
 ```
 
 ## Deployment
@@ -38,13 +38,13 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for the full deployment workflow.
 
 | Command             | What it does                           |
 | ------------------- | -------------------------------------- |
-| `npm run dev`       | Starts the Next.js development server. |
-| `npm run lint`      | Runs ESLint across the project.        |
-| `npm run typecheck` | Runs TypeScript in no-emit mode.       |
-| `npm run build`     | Builds the Next.js app for production. |
-| `npm run start`     | Starts the production server.          |
-| `npm run format`    | Formats code with Prettier.            |
-| `npm run clean`     | Removes local build artifacts.         |
+| `bun run dev`       | Starts the Next.js development server. |
+| `bun run lint`      | Runs ESLint across the project.        |
+| `bun run typecheck` | Runs TypeScript in no-emit mode.       |
+| `bun run build`     | Builds the Next.js app for production. |
+| `bun run start`     | Starts the production server.          |
+| `bun run format`    | Formats code with Prettier.            |
+| `bun run clean`     | Removes local build artifacts.         |
 
 ## Contributing
 
@@ -53,7 +53,7 @@ Contributions are welcome through GitHub Issues and Pull Requests. If you want t
 Contributor setup and workflow details live in [CONTRIBUTING.md](CONTRIBUTING.md). The short version is:
 
 - keep changes focused and readable;
-- run `npm run lint`, `npm run typecheck`, and `npm run build` before opening a PR;
+- run `bun run lint`, `bun run typecheck`, and `bun run build` before opening a PR;
 - include screenshots or preview details when a change affects the UI or content presentation;
 - use the Vercel preview deployment on pull requests as an extra validation step.
 

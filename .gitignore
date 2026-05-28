@@ -44,6 +44,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+bun-debug.log*
+
+# Bun lockfile
+# bun.lockb is binary and usually ignored if you want to use the cross-platform bun.lock (text)
+# but for most bun-only projects, keeping bun.lockb is fine.
+# If you want to use the text-based lockfile, uncomment the line below.
+# bun.lockb
 
 # Deployment / platform
 .vercel
