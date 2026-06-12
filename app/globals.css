@@ -33,89 +33,87 @@
   --radius-2xl: calc(var(--radius) * 1.7);
 }
 
-/* Light "studio" theme — warm paper, hot on-air accent. */
+/* Light Signal Atlas theme — clean enterprise paper, graphite rules, deep signal red. */
 :root {
   --font-family-body: 'proxima-nova', sans-serif;
-  --font-family-heading: 'futura-100', sans-serif;
-  --background: #f3efe7;
-  --foreground: #181410;
-  --card: rgba(255, 255, 255, 0.74);
-  --card-foreground: #181410;
-  --popover: #fbf9f4;
-  --popover-foreground: #181410;
-  --primary: #e2401a;
-  --primary-foreground: #fff7f2;
-  --secondary: rgba(24, 20, 16, 0.06);
-  --secondary-foreground: #181410;
-  --muted: rgba(24, 20, 16, 0.045);
-  --muted-foreground: rgba(24, 20, 16, 0.6);
-  --accent: rgba(226, 64, 26, 0.1);
-  --accent-foreground: #181410;
-  --destructive: #d6321f;
-  --border: rgba(24, 20, 16, 0.12);
-  --input: rgba(255, 255, 255, 0.72);
-  --ring: rgba(226, 64, 26, 0.38);
-  --radius: 0.85rem;
-  --surface-1: rgba(255, 255, 255, 0.82);
-  --surface-2: rgba(250, 247, 240, 0.64);
-  --surface-3: rgba(244, 240, 231, 0.92);
-  --accent-solid: #e2401a;
-  --accent-soft: #f0784f;
-  --accent-fog: rgba(226, 64, 26, 0.12);
-  --on-air: #e2401a;
-  --grid-line: rgba(24, 20, 16, 0.08);
-  --hero-orbit: rgba(226, 64, 26, 0.16);
-  --hero-spotlight: rgba(226, 64, 26, 0.12);
-  --page-glow: rgba(226, 64, 26, 0.08);
-  --shadow-soft: 0 14px 50px rgba(40, 26, 18, 0.1);
-  --shadow-strong: 0 22px 90px rgba(40, 26, 18, 0.14);
-  --header-bg-from: rgba(250, 247, 240, 0.82);
-  --header-bg-to: rgba(247, 243, 235, 0.62);
-  --footer-bg-top: rgba(250, 247, 240, 0.92);
-  --footer-bg-bottom: rgba(238, 232, 222, 0.96);
-  --footer-glow-primary: rgba(226, 64, 26, 0.1);
-  --footer-glow-secondary: rgba(226, 64, 26, 0.06);
+  --font-family-heading: 'proxima-nova', sans-serif;
+  --background: #fbfbfa;
+  --foreground: #101214;
+  --card: #ffffff;
+  --card-foreground: #101214;
+  --popover: #ffffff;
+  --popover-foreground: #101214;
+  --primary: #b51f2e;
+  --primary-foreground: #fffafa;
+  --secondary: rgba(16, 18, 20, 0.045);
+  --secondary-foreground: #101214;
+  --muted: rgba(16, 18, 20, 0.04);
+  --muted-foreground: rgba(16, 18, 20, 0.58);
+  --accent: rgba(181, 31, 46, 0.08);
+  --accent-foreground: #101214;
+  --destructive: #b51f2e;
+  --border: rgba(16, 18, 20, 0.12);
+  --input: rgba(255, 255, 255, 0.9);
+  --ring: rgba(181, 31, 46, 0.42);
+  --radius: 0.42rem;
+  --surface-1: rgba(255, 255, 255, 0.96);
+  --surface-2: rgba(248, 249, 248, 0.92);
+  --surface-3: rgba(241, 243, 241, 0.94);
+  --accent-solid: #b51f2e;
+  --accent-soft: #cf2d3c;
+  --accent-fog: rgba(181, 31, 46, 0.08);
+  --on-air: #b51f2e;
+  --grid-line: rgba(16, 18, 20, 0.055);
+  --map-line: rgba(16, 18, 20, 0.105);
+  --route-line: rgba(181, 31, 46, 0.16);
+  --shadow-soft: 0 12px 36px rgba(12, 14, 18, 0.055);
+  --shadow-strong: 0 22px 72px rgba(12, 14, 18, 0.12);
+  --header-bg-from: rgba(251, 251, 250, 0.94);
+  --header-bg-to: rgba(251, 251, 250, 0.82);
+  --footer-bg-top: rgba(251, 251, 250, 0.98);
+  --footer-bg-bottom: rgba(243, 244, 243, 0.98);
+  --footer-glow-primary: rgba(181, 31, 46, 0.04);
+  --footer-glow-secondary: rgba(16, 18, 20, 0.03);
 }
 
-/* Dark "control room" theme — warm near-black, on-air signal. (Default.) */
+/* Dark Signal Atlas theme — graphite control map, restrained red routes. (Default.) */
 .dark {
-  --background: #0b0a09;
-  --foreground: #ece9e3;
+  --background: #090a0c;
+  --foreground: #f2f3f1;
   --card: rgba(255, 255, 255, 0.035);
-  --card-foreground: #ece9e3;
-  --popover: #141210;
-  --popover-foreground: #ece9e3;
-  --primary: #ff5630;
-  --primary-foreground: #160c08;
-  --secondary: rgba(255, 255, 255, 0.07);
-  --secondary-foreground: #ece9e3;
+  --card-foreground: #f2f3f1;
+  --popover: #101216;
+  --popover-foreground: #f2f3f1;
+  --primary: #b51f2e;
+  --primary-foreground: #fffafa;
+  --secondary: rgba(255, 255, 255, 0.065);
+  --secondary-foreground: #f2f3f1;
   --muted: rgba(255, 255, 255, 0.045);
-  --muted-foreground: rgba(236, 233, 227, 0.58);
-  --accent: rgba(255, 86, 48, 0.14);
-  --accent-foreground: #ece9e3;
-  --destructive: #ff4d4d;
-  --border: rgba(255, 255, 255, 0.1);
-  --input: rgba(255, 255, 255, 0.05);
-  --ring: rgba(255, 86, 48, 0.42);
-  --surface-1: rgba(255, 255, 255, 0.055);
-  --surface-2: rgba(255, 255, 255, 0.025);
-  --surface-3: rgba(20, 18, 16, 0.92);
-  --accent-solid: #ff5630;
-  --accent-soft: #ff8463;
-  --accent-fog: rgba(255, 86, 48, 0.16);
-  --on-air: #ff5630;
-  --grid-line: rgba(255, 255, 255, 0.06);
-  --hero-orbit: rgba(255, 86, 48, 0.22);
-  --hero-spotlight: rgba(255, 86, 48, 0.16);
-  --page-glow: rgba(255, 86, 48, 0.08);
-  --shadow-soft: 0 18px 70px rgba(0, 0, 0, 0.5);
-  --shadow-strong: 0 24px 110px rgba(0, 0, 0, 0.62);
-  --header-bg-from: rgba(16, 14, 12, 0.82);
-  --header-bg-to: rgba(11, 10, 9, 0.62);
-  --footer-bg-top: rgba(17, 15, 13, 0.94);
-  --footer-bg-bottom: rgba(8, 7, 6, 0.98);
-  --footer-glow-primary: rgba(255, 86, 48, 0.14);
-  --footer-glow-secondary: rgba(255, 86, 48, 0.06);
+  --muted-foreground: rgba(242, 243, 241, 0.6);
+  --accent: rgba(181, 31, 46, 0.15);
+  --accent-foreground: #f2f3f1;
+  --destructive: #e14b58;
+  --border: rgba(242, 243, 241, 0.13);
+  --input: rgba(255, 255, 255, 0.055);
+  --ring: rgba(181, 31, 46, 0.48);
+  --surface-1: rgba(255, 255, 255, 0.052);
+  --surface-2: rgba(255, 255, 255, 0.026);
+  --surface-3: rgba(13, 15, 19, 0.94);
+  --accent-solid: #b51f2e;
+  --accent-soft: #d64250;
+  --accent-fog: rgba(181, 31, 46, 0.18);
+  --on-air: #b51f2e;
+  --grid-line: rgba(242, 243, 241, 0.045);
+  --map-line: rgba(242, 243, 241, 0.1);
+  --route-line: rgba(181, 31, 46, 0.08);
+  --shadow-soft: 0 18px 56px rgba(0, 0, 0, 0.48);
+  --shadow-strong: 0 28px 96px rgba(0, 0, 0, 0.62);
+  --header-bg-from: rgba(9, 10, 12, 0.88);
+  --header-bg-to: rgba(9, 10, 12, 0.66);
+  --footer-bg-top: rgba(12, 14, 18, 0.96);
+  --footer-bg-bottom: rgba(7, 8, 10, 0.98);
+  --footer-glow-primary: rgba(181, 31, 46, 0.1);
+  --footer-glow-secondary: rgba(242, 243, 241, 0.04);
 }
 
 @layer base {
@@ -139,9 +137,9 @@
   body {
     @apply min-h-screen bg-background text-foreground;
     background-image:
-      radial-gradient(circle at 82% 8%, var(--hero-spotlight), transparent 30%),
-      radial-gradient(circle at 14% 4%, var(--page-glow), transparent 26%),
-      linear-gradient(180deg, #f6f2ea 0%, #f1ede5 100%);
+      radial-gradient(circle at 50% 0%, rgba(181, 31, 46, 0.035), transparent 30rem),
+      linear-gradient(180deg, #ffffff 0%, #fbfbfa 46%, #f5f6f4 100%);
+    background-size: 100% 100%;
     background-attachment: fixed;
     font-feature-settings:
       'rlig' 1,
@@ -150,9 +148,8 @@
 
   .dark body {
     background-image:
-      radial-gradient(circle at 82% 6%, var(--hero-spotlight), transparent 28%),
-      radial-gradient(circle at 12% 2%, var(--page-glow), transparent 24%),
-      linear-gradient(180deg, #0d0b0a 0%, #0a0908 54%, #070605 100%);
+      radial-gradient(circle at 50% 0%, rgba(181, 31, 46, 0.08), transparent 32rem),
+      linear-gradient(180deg, #0b0c0f 0%, #090a0c 54%, #07080a 100%);
   }
 
   *::selection {
@@ -173,7 +170,7 @@
     font-family: var(--font-family-heading);
     font-synthesis: none;
     line-height: 1.12;
-    letter-spacing: -0.028em;
+    letter-spacing: 0;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -213,26 +210,51 @@
     mask-image: radial-gradient(circle at top, rgba(0, 0, 0, 1), transparent 80%);
   }
 
-  /* Flat, structural panel — hairline border, minimal blur. */
+  /* Flat, structural panel — hairline border, no decorative glass. */
   .section-frame {
-    @apply rounded-[1.1rem] border border-border/70;
-    background: linear-gradient(180deg, var(--surface-1), var(--surface-2));
-    box-shadow: var(--shadow-soft);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    @apply rounded-md border border-border/80;
+    background: var(--surface-1);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.75),
+      var(--shadow-soft);
   }
 
   .hero-visual-shell {
     border: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
     background:
-      radial-gradient(
-        circle at top right,
-        color-mix(in srgb, var(--on-air) 12%, transparent),
-        transparent 30%
+      linear-gradient(
+        135deg,
+        transparent 0 64%,
+        color-mix(in srgb, var(--on-air) 12%, transparent) 64.1% 64.45%,
+        transparent 64.55%
       ),
-      linear-gradient(180deg, var(--surface-1), var(--surface-3));
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(180deg, #ffffff, var(--surface-2));
+    background-size:
+      100% 100%,
+      48px 48px,
+      48px 48px,
+      100% 100%;
     box-shadow: var(--shadow-soft);
-    backdrop-filter: blur(8px);
+  }
+
+  .dark .hero-visual-shell {
+    background:
+      linear-gradient(
+        135deg,
+        transparent 0 64%,
+        color-mix(in srgb, var(--on-air) 14%, transparent) 64.1% 64.45%,
+        transparent 64.55%
+      ),
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(180deg, var(--surface-1), var(--surface-3));
+    background-size:
+      100% 100%,
+      48px 48px,
+      48px 48px,
+      100% 100%;
   }
 
   /* Fine engineering grid. */
@@ -240,7 +262,20 @@
     background-image:
       linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
       linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-size: 48px 48px;
+  }
+
+  .atlas-map {
+    background-image:
+      linear-gradient(112deg, transparent 0 18%, var(--map-line) 18.1% 18.18%, transparent 18.3%),
+      linear-gradient(32deg, transparent 0 52%, var(--route-line) 52.1% 52.28%, transparent 52.4%),
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-size:
+      100% 100%,
+      100% 100%,
+      44px 44px,
+      44px 44px;
   }
 
   /* Broadcast schedule log — emphasized horizontal rows. */
@@ -263,13 +298,13 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-border/70 px-3 py-1 font-mono text-[0.66rem] font-medium tracking-[0.2em] uppercase text-foreground/70;
+    @apply inline-flex items-center gap-2 rounded-sm border border-border/80 px-2.5 py-1 font-mono text-[0.66rem] font-medium tracking-[0.2em] uppercase text-foreground/70;
     background: color-mix(in srgb, var(--surface-1) 70%, transparent);
   }
 
   /* On-air status pill with pulsing signal dot. */
   .on-air-pill {
-    @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 font-mono text-[0.66rem] font-semibold tracking-[0.2em] uppercase;
+    @apply inline-flex items-center gap-2 rounded-sm border px-2.5 py-1 font-mono text-[0.66rem] font-semibold tracking-[0.2em] uppercase;
     border-color: color-mix(in srgb, var(--on-air) 45%, transparent);
     background: color-mix(in srgb, var(--on-air) 12%, transparent);
     color: var(--on-air);
@@ -301,7 +336,7 @@
   }
 
   .hero-title {
-    @apply text-[2.7rem] leading-[1.04] font-medium tracking-[-0.03em] text-balance sm:text-[3.6rem] sm:leading-[1.02] md:text-[4.4rem] lg:text-[5rem] lg:leading-[0.98];
+    @apply text-[2.65rem] leading-[1.04] font-medium tracking-normal text-balance sm:text-[3.45rem] sm:leading-[1.03] md:text-[4.15rem] lg:text-[4.8rem] lg:leading-[0.99];
   }
 
   .copy-lg {
@@ -309,7 +344,7 @@
   }
 
   .section-title {
-    @apply text-[2.2rem] leading-[1.08] font-medium tracking-[-0.02em] text-balance sm:text-[2.55rem] sm:leading-[1.05] lg:text-[2.95rem] lg:leading-[1.02];
+    @apply text-[2.1rem] leading-[1.08] font-medium tracking-normal text-balance sm:text-[2.5rem] sm:leading-[1.05] lg:text-[2.9rem] lg:leading-[1.02];
   }
 
   .section-copy {
@@ -322,11 +357,11 @@
 
   .glass-nav {
     background: linear-gradient(180deg, var(--header-bg-from), var(--header-bg-to));
-    backdrop-filter: blur(24px) saturate(1.4);
-    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.08);
+    -webkit-backdrop-filter: blur(14px) saturate(1.08);
     box-shadow:
       inset 0 -1px 0 var(--border),
-      0 10px 40px rgba(0, 0, 0, 0.18);
+      0 8px 30px rgba(15, 18, 22, 0.06);
   }
 
   .dark .glass-nav {
@@ -337,9 +372,20 @@
 
   .footer-shell {
     background:
-      radial-gradient(circle at top left, var(--footer-glow-primary), transparent 44%),
-      radial-gradient(circle at top right, var(--footer-glow-secondary), transparent 40%),
+      linear-gradient(
+        118deg,
+        transparent 0 36%,
+        var(--footer-glow-primary) 36.1% 36.24%,
+        transparent 36.35%
+      ),
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
       linear-gradient(180deg, var(--footer-bg-top), var(--footer-bg-bottom));
+    background-size:
+      100% 100%,
+      52px 52px,
+      52px 52px,
+      100% 100%;
     box-shadow: inset 0 1px 0 var(--border);
   }
 }

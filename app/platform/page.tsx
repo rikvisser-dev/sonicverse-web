@@ -48,7 +48,7 @@ export default function PlatformPage() {
                     {service.bullets.map((bullet) => (
                       <div
                         key={bullet}
-                        className="rounded-[1.25rem] border border-border/60 bg-background/56 px-4 py-3 text-sm text-foreground/66 backdrop-blur-sm backdrop-saturate-[1.3]"
+                        className="rounded-md border border-border/70 bg-background/56 px-4 py-3 text-sm text-foreground/66"
                       >
                         {bullet}
                       </div>
