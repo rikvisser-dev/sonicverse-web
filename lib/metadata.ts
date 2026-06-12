@@ -7,10 +7,14 @@ const siteUrl =
     ? process.env.NEXT_PUBLIC_SITE_URL
     : 'https://sonicverse.eu'
 
+const baseDescription =
+  'Sonicverse is the open broadcast stack — open-source playout, scheduling, streaming, and station tooling, built by broadcasters and developers.'
+const baseTitle = `${siteName} - The Open Broadcast Stack`
+
 export const baseMetadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} - OSS for Independent Media`,
+    default: baseTitle,
     template: `%s - ${siteName}`,
   },
   icons: {
@@ -23,21 +27,18 @@ export const baseMetadata: Metadata = {
     shortcut: ['/favicon.ico'],
   },
   manifest: '/site.webmanifest',
-  description:
-    'Sonicverse builds innovative software for independent media. Always open-source, thoughtfully designed, and engineered with care.',
+  description: baseDescription,
   openGraph: {
-    title: `${siteName} - OSS for Independent Media`,
-    description:
-      'Sonicverse builds innovative software for independent media. Always open-source, thoughtfully designed, and engineered with care.',
+    title: baseTitle,
+    description: baseDescription,
     url: siteUrl,
     siteName,
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteName} - OSS for Independent Media`,
-    description:
-      'Sonicverse builds innovative software for independent media. Always open-source, thoughtfully designed, and engineered with care.',
+    title: baseTitle,
+    description: baseDescription,
   },
 }
 

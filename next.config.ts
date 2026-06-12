@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      { source: '/services', destination: '/platform', permanent: true },
+      { source: '/projects', destination: '/broadcasters', permanent: true },
+    ]
+  },
   async headers() {
     return [
       {

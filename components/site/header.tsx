@@ -201,7 +201,7 @@ export function Header() {
                   <SheetHeader>
                     <SheetTitle>Sonicverse</SheetTitle>
                     <SheetDescription>
-                      Open-source-native product engineering with a calm technical point of view.
+                      The open broadcast stack — built by broadcasters and developers, in the open.
                     </SheetDescription>
                   </SheetHeader>
                   <div className="flex flex-col gap-2">
