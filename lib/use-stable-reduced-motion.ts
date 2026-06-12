@@ -1,15 +1,15 @@
 'use client'
 
 import { useReducedMotion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 
 export function useStableReducedMotion() {
   const shouldReduce = useReducedMotion()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const mounted = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  )
 
   return mounted && shouldReduce
 }
