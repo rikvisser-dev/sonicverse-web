@@ -5,8 +5,8 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const contentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''};
-  style-src 'self' 'unsafe-inline' https://use.typekit.net;
+  script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval' https://va.vercel-scripts.com" : ''};
+  style-src 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net;
   img-src 'self' data: blob: https:;
   font-src 'self' https://*.typekit.net;
   connect-src 'self';

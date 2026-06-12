@@ -5,7 +5,7 @@ import { siteName } from './site-data'
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL && URL.canParse(process.env.NEXT_PUBLIC_SITE_URL)
     ? process.env.NEXT_PUBLIC_SITE_URL
-    : 'https://sonicverse.eu'
+    : 'https://sonicverse.tech'
 
 const baseDescription =
   'Sonicverse is the open broadcast stack — open-source playout, scheduling, streaming, and station tooling, built by broadcasters and developers.'
@@ -19,7 +19,7 @@ export const baseMetadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: '32x32' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
     ],

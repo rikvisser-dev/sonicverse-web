@@ -1,7 +1,8 @@
 'use client'
 
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
+import { useStableReducedMotion } from '@/lib/use-stable-reduced-motion'
 import { cn } from '@/lib/utils'
 
 type BorderBeamProps = {
@@ -9,7 +10,7 @@ type BorderBeamProps = {
 }
 
 export function BorderBeam({ className }: BorderBeamProps) {
-  const reduceMotion = useReducedMotion()
+  const reduceMotion = useStableReducedMotion()
 
   if (reduceMotion) {
     return null
