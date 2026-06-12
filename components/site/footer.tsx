@@ -22,11 +22,11 @@ export function Footer() {
               </p>
             </div>
             <h2 className="max-w-md text-3xl leading-[1.18] font-medium tracking-[-0.03em] text-balance">
-              Modern software systems, digital products, and open-source technology.
+              Open-source software for modern radio.
             </h2>
             <p className="max-w-xl text-sm leading-7 text-foreground/62">
-              Built with strong engineering taste, open collaboration, and a preference for systems
-              that stay understandable as they grow.
+              The open broadcast stack — playout, scheduling, streaming, and station tooling, built
+              by broadcasters and developers, in the open.
             </p>
           </div>
 
@@ -68,18 +68,17 @@ export function Footer() {
           <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-sm font-medium text-foreground/82">
-                Looking for something specific?
+                Run a station? Build for one?
               </p>
               <p className="text-sm text-foreground/58">
-                A tighter set of links keeps the footer focused on core destinations and trust
-                information.
+                Get early access and help shape the open broadcast stack as it ships.
               </p>
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm font-medium text-foreground/76 transition hover:border-primary/20 hover:text-foreground"
+              className="inline-flex items-center justify-center rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm font-medium text-foreground/76 transition hover:border-primary/30 hover:text-foreground"
             >
-              Start a conversation
+              Get early access
             </Link>
           </div>
         </div>
